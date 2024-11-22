@@ -1,0 +1,336 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Body */
+html, body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Header */
+.header-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.header {
+  height: 100vh;
+  color: white;
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#logo img {
+  width: 300px;
+}
+
+.head-txt {
+  width: 580px;
+  margin-top: 170px;
+  font-size: 40px;
+  margin-left: 60px;
+  line-height: 1.1;
+  color: white;
+  animation-name: head-txt-anime;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+.head-txt span{
+  color: red;
+}
+
+@keyframes head-txt-anime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.head-txt p {
+  color: rgb(228, 228, 20);
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5;
+  letter-spacing: 2.8px;
+}
+
+.card-sec {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.card, .card2, .card3 {
+  position: absolute;
+  transform: rotate(-20deg);
+}
+
+.card img, .card2 img, .card3 img {
+  width: 510px;
+  height: 220px;
+  box-shadow: -20px 20px 17px rgba(0, 0, 0, 0.8);
+}
+
+.card {
+  top: -20px;
+  right: 300px;
+  animation: diagonalMove 1s ease-out forwards;
+}
+
+.card2 {
+  top: 80px;
+  right: -20px;
+  z-index: 100;
+  animation: diagonalMove2 1.2s ease-out forwards;
+}
+
+.card3 {
+  top: 230px;
+  right: -200px;
+  z-index: 100;
+  animation: diagonalMove3 1.3s ease-out forwards;
+}
+
+@keyframes diagonalMove {
+  from {
+    transform: translate(100vw, -100px) rotate(-20deg);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0) rotate(-20deg);
+    opacity: 1;
+  }
+}
+
+@keyframes diagonalMove2 {
+  from {
+    transform: translate(100vw, -100px) rotate(-20deg);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0) rotate(-20deg);
+    opacity: 1;
+  }
+}
+
+@keyframes diagonalMove3 {
+  from {
+    transform: translate(100vw, -100px) rotate(-20deg);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0) rotate(-20deg);
+    opacity: 1;
+  }
+}
+.lang-logo img{
+  width: 180px;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  animation: langLogoAnime 2s ease-in-out;
+}
+@keyframes langLogoAnime {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: center;
+}
+#navbar ul{
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  margin-top: 100px;
+  background-color: #f5f5f5f5;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#navbar ul li a{
+  text-decoration: none;
+  margin: 60px;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+#navbar ul li a:hover{
+  color: red;
+}
+.underline-animation {
+  display: inline-block;
+  position: relative;
+  color: red;
+  cursor: pointer;
+}
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px; 
+  background-color: red;
+  transition: width 0.3s ease;
+}
+.underline-animation:hover::after {
+  width: 100%;
+}
+
+
+/* Responsive website */
+@media (max-width: 1024px) {
+  .head-txt{
+    position: relative;
+    z-index: 1500;
+  }
+  #logo img{
+    position: relative;
+    z-index: 1500;
+  }
+  .card img, .card2 img, .card3 img {
+    width: 400px;
+    height: 180px;
+    box-shadow: -20px 20px 17px rgba(0, 0, 0, 0.8);
+  }
+  #navbar ul li a{
+    margin: 40px;
+  }
+}
+ @media (max-width: 867px) {
+  #navbar ul li a {
+    margin: 40px;
+  }
+  .card1 img{
+    display: none;
+  }
+  .card2{
+    top: 40px;
+  }
+  .card3{
+    top: 180px;
+    right: -150px;
+  }
+}
+@media (max-width: 768px) {
+  #logo img {
+    width: 240px;
+  }
+  .card-sec{
+    display: none;
+  }
+ .head-txt{
+    text-align: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .head-txt h1{
+    font-size: 70px;
+  }
+  .head-txt p{
+    font-size: 19px;
+  }
+  .lang-logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 100px;
+  }
+  .lang-logo img{
+    position: inherit;
+    top: 400px;
+  }
+  #navbar ul li a{
+    margin: 25px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 565px) {
+  .head-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .head-txt h1 {
+    font-size: 65px;
+    margin-top: 50px;
+  }
+
+  .head-txt p {
+    margin: 0;
+    font-size: 18px;
+    max-width: 440px;
+    min-width: 300px;
+  }
+  .lang-logo img{
+    position: relative;
+    top: 490px;
+  }
+  #navbar ul li a{
+    font-size: 15px;
+    margin: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  #logo{
+    display: flex;
+    justify-content: center;
+  }
+  #logo img {
+    width: 220px;
+  }
+  .head-txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .head-txt h1 {
+    font-size: 55px;
+  }
+
+  .head-txt p {
+    margin-top: 10px;
+    font-size: 15px;
+    max-width: 440px;
+    min-width: 300px;
+  }
+  .lang-logo{
+    display: none;
+  }
+  #navbar ul li a{
+    font-size: 15px;
+    font-weight: normal;
+    margin: 15px;
+  }
+}

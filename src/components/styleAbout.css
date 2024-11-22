@@ -1,0 +1,230 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofadi+One&display=swap');
+
+/* AboutSec */
+.aboutSec {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "img content",
+        "content img";
+    padding: 50px;
+    background-color: #f5f5f5f5;
+}
+
+.content {
+    grid: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h1 {
+    font-size: 60px;
+    margin-left: 80px;
+    color: black;
+}
+
+.content h1 span {
+    margin-left: 31px;
+    color: red;
+    text-decoration: underline;
+}
+
+.content p {
+    margin-left: 80px;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
+
+.content p span {
+    color: rgb(0, 0, 0);
+    background-color: rgb(208, 255, 0);
+}
+
+.img {
+    grid: img;
+    display: flex;
+    justify-content: center;
+}
+
+.img img {
+    width: 430px;
+}
+
+.im2 {
+    margin-top: 20px;
+}
+
+.im2 img {
+    width: 600px;
+    height: 450px;
+}
+
+.con2 {
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.con2 h1 {
+    text-decoration: underline;
+}
+
+/* Reveal on scroll */
+.content,
+.img {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Responsive website */
+@media (max-width: 1024px) {
+    .aboutSec{
+        grid-template-columns: 1fr 1fr;
+    }
+    .con2 h1{
+        margin: 0;
+        font-size: 40px;
+    }
+    .con2 p{
+        font-size: 16px;
+        margin: 0;
+    }
+    .con{
+        margin-top: 20px;
+    }
+    .con h1{
+        margin: 0;
+        font-size: 40px;
+    }
+    .con p{
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    .im2{
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    .im2 img{
+        width: 400px;
+        height: 330px;
+    }
+    .im img{
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .im2 img{
+        width: 280px;
+        height: 250px;
+    }
+    .im{
+        margin-top: 20px;
+    }
+    .im img{
+        width: 220px;
+        height: 220px;
+    }
+    .con2 h1{
+        margin: 0;
+        font-size: 30px;
+    }
+    .con2 p{
+        font-size: 15px;
+        margin: 0;
+        min-width: 220px;
+    }
+    .con h1{
+        margin: 0;
+        font-size: 40px;
+    }
+    .con p{
+        font-size: 16px;
+        margin: 0;
+    }
+}
+@media (max-width: 565px) {
+    .im2 img{
+        width: 230px;
+        height: 200px;
+        position: absolute;
+        right: 30px;
+    }
+    .im img{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 10px;
+    }
+    .con2 h1{
+        margin: 0;
+        font-size: 20px;
+    }
+    .con2 p{
+        font-size: 13px;
+        margin: 0;
+        min-width: 190px;
+    }
+    .con h1{
+        margin: 0;
+        font-size: 20px;
+    }
+    .con p{
+        font-size: 13px;
+        margin: 0;
+        min-width: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutSec{
+        grid-template-areas: 
+        'content content',
+        'content content';
+        grid-template-columns: 1fr;
+    }
+    .con2 h1{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 26px;
+    }
+    .con2 p{
+        font-size: 15px;
+    }
+    .con2{
+        width: 100%;
+        margin: 0;
+    }
+    .con h1{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 26px;
+    }
+    .con p{
+        font-size: 15px;
+    }
+    .con{
+        width: 100%;
+    }
+    .im2 img{
+        display: none;
+    }
+    .im img{
+        display: none;
+    }
+    .con h1 span{
+        margin-left: 50px;
+    }
+}

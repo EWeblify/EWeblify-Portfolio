@@ -1,0 +1,220 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofadi+One&display=swap');
+/* ContactSec */
+.contactSec {
+    display: grid;
+    grid-template-areas: 
+      'contact-left contact-right';
+    grid-template-columns: 1.5fr 1fr;
+    padding: 30px;
+    margin-top: 70px;
+  }
+  
+  .contact-left {
+    grid: contact-left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .contact-right {
+    background-color: rgb(27, 27, 27);
+    width: 550px;
+    height: 500px;
+    border-radius: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .contact-right.reveal {
+    opacity: 1;
+  }
+  
+  .contact-right h2 {
+    text-align: center;
+    margin: 20px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .contact-right form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-input {
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    resize: none;
+    outline: none;
+  }
+  
+  .contact-input:focus {
+    background-color: rgb(248, 248, 248);
+  }
+  
+  .contact-btn {
+    padding: 15px;
+    color: white;
+    background-color: rgb(255, 62, 62);
+    border: none;
+    border-radius: 15px;
+    width: 400px;
+    transition: all 0.5s;
+    font-size: 19px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  .contact-btn:hover {
+    background-color: rgb(255, 0, 0);
+  }
+  
+  .contact-left {
+    margin-left: 30px;
+    line-height: 1.5;
+  }
+  
+  .contact-left p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .contacts {
+    display: flex;
+    padding: 8px;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 1px 3px 5px rgb(116, 116, 116);
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .contacts img {
+    width: 60px;
+  }
+  
+  .contacts span:nth-child(2) {
+    margin-left: 10px;
+    line-height: .8;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contacts span:nth-child(2) p {
+    color: rgb(85, 85, 85);
+  }
+  
+  .contact-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .contacts span:nth-child(2) a {
+    color: blue;
+  }
+  
+  .contacts span:nth-child(2) a:focus {
+    color: black;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 940px) {
+    .contact-right {
+      width: 450px;
+      height: 450px;
+      margin-top: 100px;
+    }
+  
+    .contact-left h1 {
+      font-size: 29px;
+    }
+  
+    .contacts {
+      width: 250px;
+      padding: 5px;
+    }
+  
+    .contacts p {
+      font-size: 16px;
+    }
+  }
+  
+  
+  @media (max-width: 825px) {
+    .contact-left h1 {
+      display: none;
+    }
+  
+    .contact-right {
+      margin-top: 0;
+      position: relative;
+      right: 30px;
+    }
+  
+    .contact-box {
+      position: relative;
+      right: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contactSec {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-items: center;
+        align-items: center;
+        padding: 20px;
+      }
+      .contact-right {  
+        margin-top: 20px;
+        text-align: center;
+       margin-left: 50px;
+    }
+    form{
+        margin: auto;
+    }
+    .contact-left{  
+        margin-top: 20px;
+      }
+      .contact-input {
+        width: 400px;
+      }
+      .contact-btn {
+        width: 400px;
+  }
+  .contacts{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-right{
+    width: 350px;
+    margin-left: 60px;
+  }
+  .contacts{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-right h2{
+    font-size: 21px;
+  }
+  .contact-input{
+    max-width: 300px;
+  }
+  .contact-btn{
+    width: 300px;
+  }
+}

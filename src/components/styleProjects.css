@@ -1,0 +1,165 @@
+/* ProjectsSec */
+.projectSec {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: black;
+}
+
+.projectSec h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.projectArea{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+}
+.projectbox {
+    width: 300px;
+    margin: 20px;
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.project img {
+    border-radius: 20px;
+    width: 100%;
+    transition: all 0.5s;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project:hover .hover-overlay {
+    opacity: 1;
+}
+
+.hover-text {
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+.weatherBox{
+    width: 181px;
+}
+.ecomBox img{
+    width: 350px;
+    height: 300px;
+}
+
+  .projectbox {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out, transition-delay 0s;
+  }
+  
+  .projectbox.reveal {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: var(--delay, 0s);
+  }
+.project-more{
+    border-radius: 0px;
+    width: 870px;
+    height: 300px;
+    display: flex;
+    background-image: url(images/project.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-more h2{
+    font-size: 33px;
+    margin: 10px;
+}
+.pro-more-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pro-btn{
+    padding: 15px;
+    color: white;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    width: 200px;
+    font-size: 19px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.pro-btn a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* Responsive website */
+@media (max-width: 1024px) {
+    .projectArea{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .projectbox{
+        width: 200px;
+    }
+    .project-more{
+        width: 500px;
+    }
+    .pro-more-box h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .pro-btn{
+        width: 130px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pro-btn a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projectbox{
+        width: 150px;
+    }
+    .project-more{
+        width: 500px;
+    }
+}
