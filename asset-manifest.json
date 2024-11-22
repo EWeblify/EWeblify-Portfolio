@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/EWeblify-Portfolio/static/css/main.1f2f3ac7.css",
+    "main.js": "/EWeblify-Portfolio/static/js/main.3b1f5dc1.js",
+    "static/media/project.jpg": "/EWeblify-Portfolio/static/media/project.4c2ab6d1dc17632e7569.jpg",
+    "static/media/ticTacToe.jpg": "/EWeblify-Portfolio/static/media/ticTacToe.f8c25ecf4ccc36d2821c.jpg",
+    "static/media/recipeMaster.jpg": "/EWeblify-Portfolio/static/media/recipeMaster.d6f1dfb84026fb7a0727.jpg",
+    "static/media/what.png": "/EWeblify-Portfolio/static/media/what.fd63b148c9dd5691358a.png",
+    "static/media/ecomerce.jpg": "/EWeblify-Portfolio/static/media/ecomerce.f4f6b0927b84907c3447.jpg",
+    "static/media/forntend-dev.png": "/EWeblify-Portfolio/static/media/forntend-dev.660efa16eee6e4b143cc.png",
+    "static/media/aboutme.png": "/EWeblify-Portfolio/static/media/aboutme.d46a689e1df54c5b7f8e.png",
+    "static/media/html,css,js.png": "/EWeblify-Portfolio/static/media/html,css,js.a031633e09f8cbbcff12.png",
+    "static/media/instaIcon.png": "/EWeblify-Portfolio/static/media/instaIcon.799cc7b7d6fafe12d7a2.png",
+    "static/media/bg.jpg": "/EWeblify-Portfolio/static/media/bg.7e7cb106887a42b0dcca.jpg",
+    "static/media/barber2.png": "/EWeblify-Portfolio/static/media/barber2.011096d1e3bdbe02235d.png",
+    "static/media/card3.png": "/EWeblify-Portfolio/static/media/card3.1330333be177c9ad4549.png",
+    "static/media/card1.png": "/EWeblify-Portfolio/static/media/card1.b837fbca0eeeacca9733.png",
+    "static/media/githubIcon.png": "/EWeblify-Portfolio/static/media/githubIcon.2d29576613b0d098bd43.png",
+    "static/media/logowithout.png": "/EWeblify-Portfolio/static/media/logowithout.f64a4c2f38456eaec489.png",
+    "static/media/mailIcon.png": "/EWeblify-Portfolio/static/media/mailIcon.91e0a242d33f317d23a5.png",
+    "static/media/weather.jfif": "/EWeblify-Portfolio/static/media/weather.b0e395ca1b07b17a6282.jfif",
+    "static/media/card2.png": "/EWeblify-Portfolio/static/media/card2.f351ddb22ca50497bbd4.png",
+    "static/media/facebookIcon.png": "/EWeblify-Portfolio/static/media/facebookIcon.221df653c93182e9f307.png",
+    "index.html": "/EWeblify-Portfolio/index.html",
+    "main.1f2f3ac7.css.map": "/EWeblify-Portfolio/static/css/main.1f2f3ac7.css.map",
+    "main.3b1f5dc1.js.map": "/EWeblify-Portfolio/static/js/main.3b1f5dc1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f2f3ac7.css",
+    "static/js/main.3b1f5dc1.js"
+  ]
+}
