@@ -376,9 +376,6 @@ body {
     position: relative;
     top: 130px;
   }
-  .lang-logo {
-    /* display: none; */
-  }
 
   #navbar ul li a {
     font-size: 15px;
