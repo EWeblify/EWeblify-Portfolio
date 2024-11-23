@@ -371,7 +371,6 @@ const Eweblify = () => {
         <div className="contact-left">
           <h1>Let's chat Together</h1>
           <h1>Tell me about the website you want.</h1>
-          <div className="contact-box">
             <div className="contacts">
               <span><img src={mail} alt="icon" /></span>
               <span>
@@ -399,7 +398,6 @@ const Eweblify = () => {
                 <p>My Facebook account</p>
                 <p><a href="https://www.facebook.com/" target='_blank'>EWeblify (Facebook)</a></p>
               </span>
-            </div>
           </div>
         </div>
 

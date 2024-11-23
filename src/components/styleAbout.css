@@ -224,7 +224,10 @@
     .im img{
         display: none;
     }
+    .con h1{
+       text-align: center;
+    }
     .con h1 span{
-        margin-left: 50px;
+        margin: 0;
     }
 }

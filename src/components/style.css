@@ -10,7 +10,8 @@
 }
 
 /* Body */
-html, body {
+html,
+body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   width: 100%;
@@ -21,6 +22,7 @@ html, body {
   overflow: hidden;
   position: relative;
 }
+
 .header {
   height: 100vh;
   color: white;
@@ -44,7 +46,8 @@ html, body {
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
 }
-.head-txt span{
+
+.head-txt span {
   color: red;
 }
 
@@ -73,12 +76,16 @@ html, body {
   z-index: 1000;
 }
 
-.card, .card2, .card3 {
+.card,
+.card2,
+.card3 {
   position: absolute;
   transform: rotate(-20deg);
 }
 
-.card img, .card2 img, .card3 img {
+.card img,
+.card2 img,
+.card3 img {
   width: 510px;
   height: 220px;
   box-shadow: -20px 20px 17px rgba(0, 0, 0, 0.8);
@@ -109,6 +116,7 @@ html, body {
     transform: translate(100vw, -100px) rotate(-20deg);
     opacity: 0;
   }
+
   to {
     transform: translate(0, 0) rotate(-20deg);
     opacity: 1;
@@ -120,6 +128,7 @@ html, body {
     transform: translate(100vw, -100px) rotate(-20deg);
     opacity: 0;
   }
+
   to {
     transform: translate(0, 0) rotate(-20deg);
     opacity: 1;
@@ -131,32 +140,38 @@ html, body {
     transform: translate(100vw, -100px) rotate(-20deg);
     opacity: 0;
   }
+
   to {
     transform: translate(0, 0) rotate(-20deg);
     opacity: 1;
   }
 }
-.lang-logo img{
+
+.lang-logo img {
   width: 180px;
   position: absolute;
   right: 10px;
   bottom: 5px;
   animation: langLogoAnime 2s ease-in-out;
 }
+
 @keyframes langLogoAnime {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+
+  100% {
     opacity: 1;
   }
 }
+
 /* Navbar */
 #navbar {
   display: flex;
   justify-content: center;
 }
-#navbar ul{
+
+#navbar ul {
   display: flex;
   list-style-type: none;
   text-align: center;
@@ -167,7 +182,8 @@ html, body {
   align-items: center;
   justify-content: center;
 }
-#navbar ul li a{
+
+#navbar ul li a {
   text-decoration: none;
   margin: 60px;
   font-size: 20px;
@@ -175,25 +191,29 @@ html, body {
   font-weight: bold;
   transition: all 0.2s;
 }
-#navbar ul li a:hover{
+
+#navbar ul li a:hover {
   color: red;
 }
+
 .underline-animation {
   display: inline-block;
   position: relative;
   color: red;
   cursor: pointer;
 }
+
 .underline-animation::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -3px;
   width: 0;
-  height: 2px; 
+  height: 2px;
   background-color: red;
   transition: width 0.3s ease;
 }
+
 .underline-animation:hover::after {
   width: 100%;
 }
@@ -201,82 +221,101 @@ html, body {
 
 /* Responsive website */
 @media (max-width: 1024px) {
-  .head-txt{
+  .head-txt {
     position: relative;
     z-index: 1500;
   }
-  #logo img{
+
+  #logo img {
     position: relative;
     z-index: 1500;
   }
-  .card img, .card2 img, .card3 img {
+
+  .card img,
+  .card2 img,
+  .card3 img {
     width: 400px;
     height: 180px;
     box-shadow: -20px 20px 17px rgba(0, 0, 0, 0.8);
   }
-  #navbar ul li a{
-    margin: 40px;
-  }
-}
- @media (max-width: 867px) {
+
   #navbar ul li a {
     margin: 40px;
   }
-  .card1 img{
+}
+
+@media (max-width: 867px) {
+  #navbar ul li a {
+    margin: 40px;
+  }
+
+  .card1 img {
     display: none;
   }
-  .card2{
+
+  .card2 {
     top: 40px;
   }
-  .card3{
+
+  .card3 {
     top: 180px;
     right: -150px;
   }
 }
+
 @media (max-width: 768px) {
   #logo img {
     width: 240px;
   }
-  .card-sec{
+
+  .card-sec {
     display: none;
   }
- .head-txt{
+
+  .head-txt {
     text-align: center;
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
   }
-  .head-txt h1{
+
+  .head-txt h1 {
     font-size: 70px;
   }
-  .head-txt p{
+
+  .head-txt p {
     font-size: 19px;
   }
-  .lang-logo{
+
+  .lang-logo {
     position: relative;
     display: flex;
     justify-content: center;
     top: 100px;
   }
-  .lang-logo img{
-    position: inherit;
-    top: 400px;
+
+  .lang-logo img {
+    position: relative;
+    top: 130px;
   }
-  #navbar ul li a{
+
+  #navbar ul li a {
     margin: 25px;
     font-size: 18px;
   }
 }
 
 @media (max-width: 565px) {
+  #navbar ul {
+    margin-top: 0;
+  }
   .head-txt {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
     width: 100%;
-    margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -292,32 +331,39 @@ html, body {
     max-width: 440px;
     min-width: 300px;
   }
-  .lang-logo img{
-    position: relative;
-    top: 490px;
-  }
-  #navbar ul li a{
+
+  #navbar ul li a {
     font-size: 15px;
     margin: 18px;
+  }
+  .lang-logo img {
+    position: relative;
+    top: 100px;
   }
 }
 
 @media (max-width: 480px) {
-  #logo{
+  #navbar ul {
+    margin-top: 0;
+  }
+
+  #logo {
     display: flex;
     justify-content: center;
   }
+
   #logo img {
     width: 220px;
   }
-  .head-txt{
+
+  .head-txt {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 250px;
   }
+
   .head-txt h1 {
-    font-size: 55px;
+    font-size: 50px;
   }
 
   .head-txt p {
@@ -326,10 +372,15 @@ html, body {
     max-width: 440px;
     min-width: 300px;
   }
-  .lang-logo{
-    display: none;
+  .lang-logo img {
+    position: relative;
+    top: 130px;
   }
-  #navbar ul li a{
+  .lang-logo {
+    /* display: none; */
+  }
+
+  #navbar ul li a {
     font-size: 15px;
     font-weight: normal;
     margin: 15px;

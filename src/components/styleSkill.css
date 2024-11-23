@@ -1,5 +1,6 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofadi+One&display=swap');
+
 /* Skill section */
 .skillSec {
     background-color: rgb(20, 20, 20);
@@ -92,35 +93,41 @@
     from {
         width: 0;
     }
+
     to {
         width: 100%;
     }
 }
+
 /* Experties */
-.expertiesSec{
+.expertiesSec {
     display: grid;
-    grid-template-areas: 
-    'expreties expertiesImg';
+    grid-template-areas:
+        'expreties expertiesImg';
     grid-template-columns: 1fr 1fr;
     margin-top: 80px;
     padding: 20px;
 }
-.experties{
+
+.experties {
     grid: experties;
     border: 10px solid white;
     padding: 15px;
     border-radius: 30px;
 }
-.experties h1{
+
+.experties h1 {
     letter-spacing: 2px;
     font-size: 40px;
 }
-.experties ul{
+
+.experties ul {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
 }
-.experties li{
+
+.experties li {
     color: white;
     font-size: 19px;
     line-height: 2.3;
@@ -128,136 +135,160 @@
     list-style-position: inside;
     font-family: "Poppins", sans-serif;
 }
-.expertiesImg{
+
+.expertiesImg {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.expertiesImg img{
+
+.expertiesImg img {
     width: 500px;
 }
 
 /* animation */
-.expertiesImg{
+.expertiesImg {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
-.experties h1{
+
+.experties h1 {
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
 .experties li {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  
-.expertiesImg.reveal{
+}
+
+.expertiesImg.reveal {
     opacity: 1;
     transition-delay: 0.2s;
     transform: translateY(0);
 }
-  .experties.reveal h1{
+
+.experties.reveal h1 {
     opacity: 1;
     transition-delay: 0.3s;
-  }
-  .experties.reveal li:nth-child(1) {
+}
+
+.experties.reveal li:nth-child(1) {
     transition-delay: 0.2s;
     opacity: 1;
     transform: translateY(0);
-  }
-  
-  .experties.reveal li:nth-child(2) {
+}
+
+.experties.reveal li:nth-child(2) {
     transition-delay: 0.3s;
     opacity: 1;
     transform: translateY(0);
-  }
-  
-  .experties.reveal li:nth-child(3) {
+}
+
+.experties.reveal li:nth-child(3) {
     transition-delay: 0.4s;
     opacity: 1;
     transform: translateY(0);
-  }
-  
-  .experties.reveal li:nth-child(4) {
+}
+
+.experties.reveal li:nth-child(4) {
     transition-delay: 0.5s;
     opacity: 1;
     transform: translateY(0);
-  }
-  
-  .experties.reveal li:nth-child(5) {
+}
+
+.experties.reveal li:nth-child(5) {
     transition-delay: 0.6s;
     opacity: 1;
     transform: translateY(0);
-  }
-  
-  .experties.reveal li:nth-child(6) {
+}
+
+.experties.reveal li:nth-child(6) {
     transition-delay: 0.7s;
     opacity: 1;
     transform: translateY(0);
-  }
-  
+}
 
-  /* Responsive website */
+
+/* Responsive website */
 @media (max-width: 1024px) {
-    .expertiesSec{
+    .expertiesSec {
         grid-template-columns: 1.5fr 1fr;
     }
-    .experties ul li{
+
+    .experties ul li {
         font-size: 16px;
     }
-    .expertiesImg img{
+
+    .expertiesImg img {
         width: 300px;
     }
 }
+
 @media (max-width: 768px) {
-    .skillSec h1{
+    .skillSec h1 {
         font-size: 30px;
     }
-    .skills{
+
+    .skills {
         max-width: 440px;
     }
-    .expertiesImg img{
+
+    .expertiesImg img {
         display: none;
-      }
-    
-      .expertiesSec {
+    }
+
+    .expertiesSec {
         grid-template-columns: 1fr;
         justify-content: center;
-      }
+    }
 }
 
 @media (max-width: 565px) {
-    .skills{
+    .skillSec {
+        margin-top: 0;
+    }
+    .skills {
         max-width: 400px;
     }
-    .experties{
+
+    .experties {
         width: 400px;
         height: 450px;
     }
 }
 
 @media (max-width: 480px) {
-    .skillSec h1{
+    .skillSec {
+        margin-top: 0;
+    }
+
+    .skillSec h1 {
         font-size: 27px;
     }
-    .skills{
+
+    .skills {
         max-width: 350px;
     }
-    .experties{
+
+    .experties {
         width: 350px;
         height: 400px;
         padding: 5px;
     }
-    .experties h1{
+
+    .experties h1 {
         letter-spacing: 1.5px;
         font-size: 30px;
     }
-    .experties ul{
+
+    .experties ul {
         margin-top: 10px;
     }
-    .experties li{
+
+    .experties li {
         font-size: 17px;
         line-height: 2;
     }

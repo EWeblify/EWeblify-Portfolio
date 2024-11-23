@@ -168,6 +168,9 @@
   }
   
   @media (max-width: 768px) {
+    .contactSec{
+      margin-top: 0;
+    }
     .contactSec {
         display: flex;
         flex-direction: column-reverse;
@@ -186,6 +189,10 @@
     .contact-left{  
         margin-top: 20px;
       }
+      .contact-left{
+        width: 100%;
+        margin-left: 0;
+      }
       .contact-input {
         width: 400px;
       }
@@ -200,13 +207,16 @@
 }
 
 @media (max-width: 480px) {
+  .contactSec{
+    margin-top: 0;
+  }
   .contact-right{
     width: 350px;
     margin-left: 60px;
   }
-  .contacts{
-    margin-left: auto;
-    margin-right: auto;
+  .contact-left{
+    width: 100%;
+    margin-left: 0;
   }
   .contact-right h2{
     font-size: 21px;

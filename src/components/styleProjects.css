@@ -133,6 +133,12 @@
 }
 
 @media (max-width: 768px) {
+    .projectSec h1{
+        margin-top: 20px;
+    }
+    .projectSec{
+        margin-top: 0;
+    }
     .projectbox{
         width: 200px;
     }
@@ -156,6 +162,12 @@
 }
 
 @media (max-width: 480px) {
+    .projectSec h1{
+        margin-top: 20px;
+    }
+    .projectSec{
+        margin-top: 0;
+    }
     .projectbox{
         width: 150px;
     }
