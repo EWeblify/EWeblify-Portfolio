@@ -121,7 +121,12 @@
     text-decoration: none;
     font-size: 20px;
 }
-
+.projectSec h1{
+    margin-top: 20px;
+}
+.projectSec{
+    margin-top: 0;
+}
 
 /* Responsive website */
 @media (max-width: 1024px) {

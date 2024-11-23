@@ -151,6 +151,9 @@
   
   
   @media (max-width: 825px) {
+    .contactSec{
+      margin-top: 0;
+    }
     .contact-left h1 {
       display: none;
     }

@@ -217,10 +217,18 @@ body {
 .underline-animation:hover::after {
   width: 100%;
 }
-
+#navbar ul {
+  margin-top: 0;
+}
+#navbar ul li {
+  margin-top: 20px;
+}
 
 /* Responsive website */
 @media (max-width: 1024px) {
+  #navbar ul {
+    margin-top: 0;
+  }
   .head-txt {
     position: relative;
     z-index: 1500;

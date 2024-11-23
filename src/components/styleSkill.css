@@ -210,7 +210,9 @@
     opacity: 1;
     transform: translateY(0);
 }
-
+.skillSec {
+    margin-top: 0;
+}
 
 /* Responsive website */
 @media (max-width: 1024px) {
