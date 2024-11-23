@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/EWeblify-Portfolio/static/css/main.1f2f3ac7.css",
-    "main.js": "/EWeblify-Portfolio/static/js/main.3b1f5dc1.js",
+    "main.css": "/EWeblify-Portfolio/static/css/main.9ba41aea.css",
+    "main.js": "/EWeblify-Portfolio/static/js/main.df0463d6.js",
     "static/media/project.jpg": "/EWeblify-Portfolio/static/media/project.4c2ab6d1dc17632e7569.jpg",
     "static/media/ticTacToe.jpg": "/EWeblify-Portfolio/static/media/ticTacToe.f8c25ecf4ccc36d2821c.jpg",
     "static/media/recipeMaster.jpg": "/EWeblify-Portfolio/static/media/recipeMaster.d6f1dfb84026fb7a0727.jpg",
@@ -22,11 +22,11 @@
     "static/media/card2.png": "/EWeblify-Portfolio/static/media/card2.f351ddb22ca50497bbd4.png",
     "static/media/facebookIcon.png": "/EWeblify-Portfolio/static/media/facebookIcon.221df653c93182e9f307.png",
     "index.html": "/EWeblify-Portfolio/index.html",
-    "main.1f2f3ac7.css.map": "/EWeblify-Portfolio/static/css/main.1f2f3ac7.css.map",
-    "main.3b1f5dc1.js.map": "/EWeblify-Portfolio/static/js/main.3b1f5dc1.js.map"
+    "main.9ba41aea.css.map": "/EWeblify-Portfolio/static/css/main.9ba41aea.css.map",
+    "main.df0463d6.js.map": "/EWeblify-Portfolio/static/js/main.df0463d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f2f3ac7.css",
-    "static/js/main.3b1f5dc1.js"
+    "static/css/main.9ba41aea.css",
+    "static/js/main.df0463d6.js"
   ]
 }
