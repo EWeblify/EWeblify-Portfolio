@@ -231,3 +231,15 @@
     width: 300px;
   }
 }
+
+@media (max-width: 350px){
+  .contact-right{
+    width: 300px;
+  }
+  .contact-input{
+    max-width: 260px;
+  }
+  .contact-btn{
+    width: 260px;
+  }
+}

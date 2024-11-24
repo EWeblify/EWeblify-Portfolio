@@ -150,3 +150,13 @@
         font-size: 17px;
     }
 }
+
+@media (max-width: 350px){
+    .footer-nav ul li a{
+        font-size: 16px;
+        margin: 7px;
+    }
+    .footer-copyright p{
+        font-size: 15px;
+    }
+}

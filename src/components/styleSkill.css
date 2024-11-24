@@ -295,3 +295,13 @@
         line-height: 2;
     }
 }
+
+@media (max-width: 350px){
+    .experties{
+        width: 280px;
+        padding: 8px;
+    }
+    .experties h1{
+        font-size: 18px;
+    }
+}
