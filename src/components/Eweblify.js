@@ -96,7 +96,7 @@ const Eweblify = () => {
             <h1>
               WEB <br /> <span>DEVELOPMENT</span>
             </h1>
-            <p>Hi, My Name Is Hamid I Am A Frontend Developer And I Am Here To Help You.</p>
+            <p>Hi, My Name Is Hamid I Am A Website Developer And I Am Here To Help You.</p>
           </div>
           <div className="card-sec">
             <div className="card card1">
@@ -149,10 +149,10 @@ const Eweblify = () => {
           {({ inView, ref }) => (
             <div className={`content con ${inView ? 'reveal' : ''}`} ref={ref}>
               <h1>
-                Frontend <br /> <span>Development</span>
+                Website <br /> <span>Development</span>
               </h1>
               <p>
-                I am a passionate Frontend Developer with experience in building modern and responsive websites. My expertise lies in creating dynamic user interfaces using <span>HTML, CSS, JavaScript, and React.js.</span>
+                I am a passionate Website Developer with experience in building modern and responsive websites. My expertise lies in creating dynamic user interfaces using <span>HTML, CSS, JavaScript, React.js, and Node.js.</span>
               </p>
             </div>
           )}
@@ -242,9 +242,9 @@ const Eweblify = () => {
         <ul>
           <li>Responsive Web Design</li>
           <li>Dynamic Websites</li>
+          <li>Backend</li>
           <li>Frontend Development Using HTML, CSS, JavaScript, React.js</li>
           <li>Web Animations</li>
-          <li>Custom Solutions</li>
           <li>Performance Optimization</li>
         </ul>
       </div>
